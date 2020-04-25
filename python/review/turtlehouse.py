@@ -10,7 +10,7 @@ turtle = turtle.Turtle()
 turtle.shape("turtle")
 turtle.speed(0)
 
-#별
+#functions
 def star(x=15):
     turtle.color("blue")
     turtle.begin_fill()
@@ -26,32 +26,42 @@ def star(x=15):
     turtle.left(144)
     turtle.end_fill()
 
-for i in range(15):
+def move(x, y):
     turtle.penup()
-    turtle.setx(random.randint(-200, 200))
-    turtle.sety(random.randint(100, 200))
+    turtle.goto(x, y)
     turtle.pendown()
+
+def secggal():
+    color = ["red","blue","orange","yellow","green","navy","purple"]
+    turtle.color(random.choice(color))
+
+
+def square(x, y):
+    turtle.forward(x)
+    turtle.left(90)
+    turtle.forward(y)
+    turtle.left(90)
+    turtle.forward(x)
+    turtle.left(90)
+    turtle.forward(y)
+    turtle.left(90)
+#별
+for i in range(15):
+    move(random.randint(-200, 200),random.randint(100, 200))
     star()
 
 #틀
-turtle.penup()
-turtle.goto(-100,-100)
-turtle.pendown()
-turtle.forward(300)
-turtle.left(90)
-turtle.forward(150)
-turtle.left(90)
-turtle.forward(300)
-turtle.left(90)
-turtle.forward(150)
-turtle.left(90)
+move(-100,-100)
+turtle.color("brown")
+turtle.begin_fill()
+square(300,150)
+turtle.end_fill()
 
 #창문 1
-turtle.penup()
-turtle.goto(-25,-25)
-turtle.pendown()
-turtle.color("light blue")
+move(-25,-25)
 for i in range(4):
+    secggal()
+    turtle.begin_fill()
     turtle.forward(25)
     turtle.left(90)
     turtle.forward(25)
@@ -59,29 +69,33 @@ for i in range(4):
     turtle.forward(25)
     turtle.left(90)
     turtle.forward(25)
-
+    turtle.end_fill()
 #창문 2
-turtle.penup()
-turtle.goto(125,-45)
-turtle.pendown()
+move(125,-45)
+secggal()
+turtle.begin_fill()
 turtle.circle(25)
-turtle.penup()
-turtle.goto(100,-20)
-turtle.pendown()
+turtle.end_fill()
+turtle.color("black")
+turtle.circle(25)
+move(100, -20)
 turtle.forward(50)
-turtle.penup()
-turtle.goto(125,-45)
-turtle.pendown()
+move(125, -45)
+
 turtle.left(90)
 turtle.forward(50)
 
 #문
 turtle.color("black")
-turtle.penup()
-turtle.goto(50,-45)
-turtle.pendown()
-turtle.
+turtle.right(90)
+move(40, -100)
+secggal()
+turtle.begin_fill()
+square(35,75)
+turtle.end_fill()
 
+#손잡이
+turtle
 
 n = 0
 while(n<10000000):
