@@ -46,8 +46,8 @@ def square(x, y):
     turtle.forward(y)
     turtle.left(90)
 #별
-for i in range(15):
-    move(random.randint(-200, 200),random.randint(100, 200))
+for i in range(30):
+    move(random.randint(-200, 350),random.randint(100, 400))
     star()
 
 #틀
@@ -95,7 +95,26 @@ square(35,75)
 turtle.end_fill()
 
 #손잡이
-turtle
+move(65, -65)
+secggal()
+turtle.begin_fill()
+turtle.circle(5)
+turtle.end_fill()
+move(1000,1000)
+
+#지붕
+move(200, 50)
+secggal()
+turtle.begin_fill()
+turtle.left(120)
+turtle.forward(40)
+turtle.left(60)
+turtle.forward(260)
+turtle.left(60)
+turtle.forward(40)
+turtle.left(120)
+turtle.forward(300)
+turtle.end_fill()
 
 n = 0
 while(n<10000000):
