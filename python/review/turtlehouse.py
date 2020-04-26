@@ -6,6 +6,7 @@
 
 import turtle
 import random
+import time
 turtle = turtle.Turtle()
 turtle.shape("turtle")
 turtle.speed(0)
@@ -116,6 +117,4 @@ turtle.left(120)
 turtle.forward(300)
 turtle.end_fill()
 
-n = 0
-while(n<10000000):
-    n +=1
+time.sleep(3)
