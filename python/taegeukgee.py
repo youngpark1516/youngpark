@@ -87,10 +87,6 @@ turtle.end_fill()
 turtle.color("black")
 home()
 
-#틀
-# move(-210.94, 30.05)
-# square(110.94, 120.18)
-
 #건괘 layer 1
 move(-155.47, 41.61)
 turtle.left(56.31)
@@ -219,5 +215,4 @@ turtle.end_fill()
 
 
 
-
-time.sleep(3)
+time.sleep(15)
