@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button onclick="exe()">exe</button>
+	<input type="text" id="out">
+	<input type="text" id="num">
+	<script type="text/javascript">
+		function exe()
+		{
+			document.getElementById('out').value = 0
+			document.getElementById('num').value = 0
+			var in1 = parseInt(document.getElementById('out').value)
+			var in2 = parseInt(document.getElementById('num').value)
+			var exp = 1/2
+			for (var i=0; i<10; i++)
+			{
+				for (var j = 0; i<((in2*2)+1); j++)
+					{exp = exp * 1/2}
+				in1 = in1 + exp
+				in2 += 1
+				document.getElementById('out').value = in1
+				document.getElementById('num').value = in2
+			}		
+
+		}
+	</script>
+</body>
+</html>

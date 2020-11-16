@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<style type="text/css">
+		button {
+			margin-top:10px;
+		}
+	</style>
+</head>
+<body style="font-size: 30px;" align = "center">
+	<br/><br/><br/>
+	<h1>계산기</h1>
+	<input style="font-size: 30px" readonly="" id="in">
+	<br/><br/>
+
+	<button style="width: 50px;height: 50px;" onclick="rec()" id="1/x">1/x</button>
+	<button style="width: 50px;height: 50px;" onclick="sq()" id="x^2">x^2</button>	
+	<button style="width: 50px;height: 50px;" onclick="C()" id="C">C</button>
+	<button style="width: 50px;height: 50px;" onclick="back()" id="<"> <- </button>
+	<br/>
+	<button style="width: 50px;height: 50px;" onclick="one()" id="1">1</button>
+	<button style="width: 50px;height: 50px;" onclick="two()" id="2">2</button>
+	<button style="width: 50px;height: 50px;" onclick="thr()" id="3">3</button>
+	<button style="width: 50px;height: 50px;" onclick="add()" id="+">+</button>
+	<br/>
+	<button style="width: 50px;height: 50px;" onclick="fou()" id="4">4</button>
+	<button style="width: 50px;height: 50px;" onclick="fiv()" id="5">5</button>
+	<button style="width: 50px;height: 50px;" onclick="six()" id="6">6</button>
+	<button style="width: 50px;height: 50px;" onclick="sub()" id="-">-</button>
+	<br/>
+	<button style="width: 50px;height: 50px;" onclick="sev()" id="7">7</button>
+	<button style="width: 50px;height: 50px;" onclick="eig()" id="8">8</button>
+	<button style="width: 50px;height: 50px;" onclick="nin()" id="9">9</button>
+	<button style="width: 50px;height: 50px;" onclick="mul()" id="*">*</button>
+	<br/>
+	<button style="background-color: white; width: 50px;height: 50px;" disabled="true">&nbsp;</button>
+	<button style="width: 50px;height: 50px;" onclick="zer()" id="0">0</button>
+	<button style="background-color: white; width: 50px;height: 50px;" disabled="true">&nbsp;</button>
+	<button style="width: 50px;height: 50px;" onclick="div()" id="/">/</button>
+	<br/>
+	<button style="width: 225px;height: 50px;" onclick="equ()" id="=">=</button>
+
+	<script type="text/javascript">
+		function C()
+		{
+			document.getElementById('in').value = ""
+		}
+		function one()
+		{
+			document.getElementById('in').value = document.getElementById('in').value + 1}
+		function two()
+		{
+			document.getElementById('in').value = document.getElementById('in').value + 2}
+		function thr()
+		{
+			document.getElementById('in').value = document.getElementById('in').value + 3}
+		function fou()
+		{
+			document.getElementById('in').value = document.getElementById('in').value + 4}
+		function fiv()
+		{
+			document.getElementById('in').value = document.getElementById('in').value + 5}
+		function six()
+		{
+			document.getElementById('in').value = document.getElementById('in').value + 6}
+		function sev()
+		{
+			document.getElementById('in').value = document.getElementById('in').value + 7}
+		function eig()
+		{
+			document.getElementById('in').value = document.getElementById('in').value + 8}
+		function nin()
+		{
+			document.getElementById('in').value = document.getElementById('in').value + 9}
+		function zer()
+		{
+			document.getElementById('in').value = document.getElementById('in').value + 0}
+		function add()
+		{
+			var whole = document.getElementById('in').value
+	        if (whole[whole.length-2] != "+" && whole[whole.length-2] != "-"&& whole[whole.length-2] != "*"&& whole[whole.length-2] != "/"){
+	        document.getElementById('in').value = document.getElementById('in').value + " + "
+	        }
+	        else{
+	           document.getElementById('in').value =whole.substring(0,whole.length-2) + "+ "
+	        }
+		}
+		function sub()
+		{
+			var whole = document.getElementById('in').value
+	        if (whole[whole.length-2] != "+" && whole[whole.length-2] != "-"&& whole[whole.length-2] != "*"&& whole[whole.length-2] != "/"){
+	        document.getElementById('in').value = document.getElementById('in').value + " - "
+	        }
+	        else{
+	           document.getElementById('in').value =whole.substring(0,whole.length-2) + "- "
+	        }
+		}
+		function mul()
+		{
+			var whole = document.getElementById('in').value
+	        if (whole[whole.length-2] != "+" && whole[whole.length-2] != "-"&& whole[whole.length-2] != "*"&& whole[whole.length-2] != "/"){
+	        document.getElementById('in').value = document.getElementById('in').value + " * "
+	        }
+	        else{
+	           document.getElementById('in').value =whole.substring(0,whole.length-2) + "* "
+	        }
+		}
+		function div()
+		{
+			var whole = document.getElementById('in').value
+	        if (whole[whole.length-2] != "+" && whole[whole.length-2] != "-"&& whole[whole.length-2] != "*"&& whole[whole.length-2] != "/"){
+	        document.getElementById('in').value = document.getElementById('in').value + " / "
+	        }
+	        else{
+	           document.getElementById('in').value =whole.substring(0,whole.length-2) + "/ "
+	        }
+		}
+		function sq()
+		{
+			document.getElementById('in').value = parseInt(document.getElementById('in').value) * parseInt(document.getElementById('in').value)
+		}
+		function rec()
+		{
+			document.getElementById('in').value = 1/parseInt(document.getElementById('in').value)
+		}
+		function back()
+		{
+
+		}
+		function equ()
+		{
+			var whole = document.getElementById('in').value
+			var temp = whole.split(" ")
+			var templen = temp.length
+			var num = []
+			var op = []
+			for (var i = 0; i < temp.length; i++) {
+					if (i%2 == 0) {
+						num.push(temp[i])
+					}
+					else {
+						op.push(temp[i])
+					}
+				}
+
+			for (var j = 0; j < templen; j++){
+				for (var k = 0; k < temp.length; k++) {
+					if (op[k] == '+' || op[k] == '-') {
+						
+					}
+					else if (op[k] == '*'){
+						newnum = parseInt(num[k]) * parseInt(num[k+1])
+						num.splice(k, 2, newnum)
+						op.splice(k, 1)
+					}
+					else if (op[k] == '/'){
+						newnum = parseInt(num[k]) / parseInt(num[k+1])
+						num.splice(k, 2, newnum)
+						op.splice(k, 1)
+					}
+				}
+			}
+			var base = num[0]
+			for (var m = 1; m < num.length; m++) {
+				if (op[m-1] == '+') {
+					base = parseInt(base)  + parseInt(num[m])
+				}
+				else if (op[m-1] == '-'){
+					base = parseInt(base) - parseInt(num[m])
+				}
+			}
+			document.getElementById('in').value = base
+		}
+		
+	</script>
+</body>
+</html>
