@@ -6,8 +6,8 @@ from PIL import ImageTk, Image
 np.random.seed(1)
 PhotoImage = ImageTk.PhotoImage
 UNIT = 100  # pixels
-HEIGHT = 5  # grid height
-WIDTH = 5  # grid width
+HEIGHT = 7  # grid height
+WIDTH = 7  # grid width
 
 
 class Env(tk.Tk):
@@ -20,6 +20,9 @@ class Env(tk.Tk):
         self.shapes = self.load_images()
         self.canvas = self._build_canvas()
         self.texts = []
+        self.done_one = False
+        self.done_two = False
+
 
     def _build_canvas(self):
         canvas = tk.Canvas(self, bg='white',
@@ -36,8 +39,10 @@ class Env(tk.Tk):
         # add img to canvas
         self.rectangle = canvas.create_image(50, 50, image=self.shapes[0])
         self.triangle1 = canvas.create_image(250, 150, image=self.shapes[1])
-        self.triangle2 = canvas.create_image(150, 250, image=self.shapes[1])
-        self.circle = canvas.create_image(250, 250, image=self.shapes[2])
+
+        self.circle1 = canvas.create_image(350, 350, image=self.shapes[2])
+        self.circle2 = canvas.create_image(550, 550, image=self.shapes[2])
+
 
         # pack all
         canvas.pack()
@@ -66,8 +71,29 @@ class Env(tk.Tk):
         x, y = self.canvas.coords(self.rectangle)
         self.canvas.move(self.rectangle, UNIT / 2 - x, UNIT / 2 - y)
         # return observation
+        self.done_one = False
+        self.done_two = False
         return self.coords_to_state(self.canvas.coords(self.rectangle))
 
+    def text_value(self, row, col, contents, font='Helvetica', size=10,
+                   style='normal', anchor="nw"):
+
+        x, y = 50 + (UNIT * col), 50 + (UNIT * row)
+        font = (font, str(size), style)
+        text = self.canvas.create_text(x, y, fill="black", text=contents,
+                                       font=font, anchor=anchor)
+        return self.texts.append(text)
+    def print_value_all(self, q_table):
+        for i in self.texts:
+            self.canvas.delete(i)
+        self.texts.clear()
+        for i in range(HEIGHT):
+            for j in range(WIDTH):
+                for action in range(0, 4):
+                    state = [i, j]
+                    if str(state) in q_table.keys():
+                        temp = q_table[str(state)]
+                        self.text_value(j, i, round(temp, 2))
     def step(self, action):
         state = self.canvas.coords(self.rectangle)
         base_action = np.array([0, 0])
@@ -93,11 +119,21 @@ class Env(tk.Tk):
         next_state = self.canvas.coords(self.rectangle)
 
         # reward function
-        if next_state == self.canvas.coords(self.circle):
-            reward = 100
+        reward = 0
+        done = False
+        if next_state == self.canvas.coords(self.circle1) and not self.done_one:
+            self.done_one = True
+            # reward = 100
+        elif next_state == self.canvas.coords(self.circle2) and not self.done_two:
+            self.done_two = True
+            # reward = 100
+        if self.done_one and self.done_two:
             done = True
-        elif next_state in [self.canvas.coords(self.triangle1),
-                            self.canvas.coords(self.triangle2)]:
+            reward = 100
+        # if next_state == self.canvas.coords(self.circle):
+        #     reward = 100
+        #     done = True
+        elif next_state in [self.canvas.coords(self.triangle1)]:
             reward = -100
             done = True
         else:

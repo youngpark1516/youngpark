@@ -20,10 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f9bd5ff-ff6f-499b-94a1-5d30795b233e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/python/REINFORCE/REINFORCE_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/REINFORCE/reinforce_trained.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/REINFORCE/reinforce_trained.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/REINFORCE_book_ver/REINFORCE_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/REINFORCE_book_ver/environment_REINFORCE.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa/deep_sarsa_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa/deep_sarsa_trained.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa/deep_sarsa_trained.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa/environment_deep_sarsa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/keras fashion mnist.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/multi-armed-bandit-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/multi-armed-bandit-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled2-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled2-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Untitled2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Untitled2.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multi-armed-bandit-exploration.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/multi-armed-bandit-exploration.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/multi-armed-bandit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/multi-armed-bandit.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/montecarlo/environment_montecarlo.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/montecarlo/environment_montecarlo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/montecarlo/mc_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/montecarlo/mc_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/qlearning/environment_qlearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/qlearning/environment_qlearning.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,19 +63,106 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/python/value_iteration/environment_value.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/python/REINFORCE" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\git\youngpark\python\REINFORCE" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\git\youngpark\python\REINFORCE" />
+      <recent name="C:\Users\User\Documents\git\youngpark\python\deep sarsa" />
       <recent name="C:\Users\User\Documents\git\youngpark\python\policy_iteration" />
       <recent name="C:\Users\User\Documents\git\youngpark\python\qlearning" />
       <recent name="C:\Users\User\Documents\git\youngpark\python\sarsa" />
-      <recent name="C:\Users\User\Documents\git\youngpark\python\value_iteration" />
-      <recent name="C:\Users\User\Documents\git\youngpark\python\montecarlo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.mc_agent (1)">
-    <configuration name="mc_agent (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.REINFORCE_agent">
+    <configuration name="REINFORCE_agent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="youngpark" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/REINFORCE" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/REINFORCE/REINFORCE_agent.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="deep_sarsa_agent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="youngpark" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/deep sarsa" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/deep sarsa/deep_sarsa_agent.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="environment_deep_sarsa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="youngpark" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/deep sarsa" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/deep sarsa/environment_deep_sarsa.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="keras fashion mnist" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="youngpark" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/keras fashion mnist.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mc_agent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="youngpark" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -82,97 +183,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="policy-iteration" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="youngpark" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/policy_iteration" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/policy_iteration/policy-iteration.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="qlearning_agent (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="youngpark" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/qlearning" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/qlearning/qlearning_agent.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="sarsa_agent (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="youngpark" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/sarsa" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/sarsa/sarsa_agent.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="value_iteration" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="youngpark" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/value_iteration" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/value_iteration/value_iteration.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.mc_agent (1)" />
-        <item itemvalue="Python.sarsa_agent (1)" />
-        <item itemvalue="Python.qlearning_agent (1)" />
-        <item itemvalue="Python.value_iteration" />
-        <item itemvalue="Python.policy-iteration" />
+        <item itemvalue="Python.REINFORCE_agent" />
+        <item itemvalue="Python.deep_sarsa_agent" />
+        <item itemvalue="Python.mc_agent" />
+        <item itemvalue="Python.environment_deep_sarsa" />
+        <item itemvalue="Python.keras fashion mnist" />
       </list>
     </recent_temporary>
   </component>
@@ -202,49 +219,53 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="714" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610110643546">
+    <state x="714" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612579622504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="714" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610110643546" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1610544775791">
+    <state x="714" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1612579622504" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1612357937799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1610544775791" />
-    <state width="1899" height="283" key="GridCell.Tab.0.bottom" timestamp="1610194359719">
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612357937799" />
+    <state width="936" height="279" key="GridCell.Tab.0.bottom" timestamp="1612581614112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610194359719" />
-    <state width="1899" height="283" key="GridCell.Tab.0.center" timestamp="1610194359719">
+    <state width="936" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612581614112" />
+    <state width="936" height="279" key="GridCell.Tab.0.center" timestamp="1612581614112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="283" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610194359719" />
-    <state width="1899" height="283" key="GridCell.Tab.0.left" timestamp="1610194359719">
+    <state width="936" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612581614112" />
+    <state width="936" height="279" key="GridCell.Tab.0.left" timestamp="1612581614112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="283" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610194359719" />
-    <state width="1899" height="283" key="GridCell.Tab.0.right" timestamp="1610194359719">
+    <state width="936" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612581614112" />
+    <state width="936" height="279" key="GridCell.Tab.0.right" timestamp="1612581614112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="283" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610194359719" />
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1610116578768">
+    <state width="936" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612581614112" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1610797463603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610116578768" />
-    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1610116578767">
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610797463603" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1610797463603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610116578767" />
-    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1610116578767">
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610797463603" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1610797463603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610116578767" />
-    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1610116578768">
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610797463603" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1610797463603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610116578768" />
-    <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1610545312953">
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610797463603" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1612581614200">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1610545312953" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1612581614200" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2" timestamp="1612579545548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1612579545548" />
   </component>
 </project>

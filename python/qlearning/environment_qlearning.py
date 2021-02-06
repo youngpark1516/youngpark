@@ -6,8 +6,8 @@ from PIL import ImageTk, Image
 np.random.seed(1)
 PhotoImage = ImageTk.PhotoImage
 UNIT = 100  # pixels
-HEIGHT = 5  # grid height
-WIDTH = 5  # grid width
+HEIGHT = 7  # grid height
+WIDTH = 7  # grid width
 
 
 class Env(tk.Tk):
@@ -20,6 +20,8 @@ class Env(tk.Tk):
         self.shapes = self.load_images()
         self.canvas = self._build_canvas()
         self.texts = []
+        self.done_one = False
+        self.done_two = False
 
     def _build_canvas(self):
         canvas = tk.Canvas(self, bg='white',
@@ -36,8 +38,9 @@ class Env(tk.Tk):
         # add img to canvas
         self.rectangle = canvas.create_image(50, 50, image=self.shapes[0])
         self.triangle1 = canvas.create_image(250, 150, image=self.shapes[1])
-        self.triangle2 = canvas.create_image(150, 250, image=self.shapes[1])
-        self.circle = canvas.create_image(250, 250, image=self.shapes[2])
+
+        self.circle1 = canvas.create_image(350, 350, image=self.shapes[2])
+        self.circle2 = canvas.create_image(550, 550, image=self.shapes[2])
 
         # pack all
         canvas.pack()
@@ -100,6 +103,8 @@ class Env(tk.Tk):
         x, y = self.canvas.coords(self.rectangle)
         self.canvas.move(self.rectangle, UNIT / 2 - x, UNIT / 2 - y)
         self.render()
+        self.done_one = False
+        self.done_two = False
         # return observation
         return self.coords_to_state(self.canvas.coords(self.rectangle))
 
@@ -129,16 +134,27 @@ class Env(tk.Tk):
         next_state = self.canvas.coords(self.rectangle)
 
         # reward function
-        if next_state == self.canvas.coords(self.circle):
-            reward = 100
+        reward = 0
+        done = False
+        if next_state == self.canvas.coords(self.circle1) and not self.done_one:
+            self.done_one = True
+            # reward = 100
+        elif next_state == self.canvas.coords(self.circle2) and not self.done_two:
+            self.done_two = True
+            # reward = 100
+        if self.done_one and self.done_two:
             done = True
-        elif next_state in [self.canvas.coords(self.triangle1),
-                            self.canvas.coords(self.triangle2)]:
+            reward = 100
+        # if next_state == self.canvas.coords(self.circle1) and not self.done_one:
+        #     reward = 100
+        #     done = True
+
+        elif next_state in [self.canvas.coords(self.triangle1)]:
             reward = -100
             done = True
-        else:
-            reward = 0
-            done = False
+        # else:
+        #     reward = 0
+        #     done = False
 
         next_state = self.coords_to_state(next_state)
         return next_state, reward, done

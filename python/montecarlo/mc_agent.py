@@ -2,17 +2,17 @@ import numpy as np
 import random
 from collections import defaultdict
 from environment_montecarlo import Env
-
+import time
 
 # Monte Carlo Agent which learns every episodes from the sample
 class MCAgent:
     def __init__(self, actions):
-        self.width = 5
-        self.height = 5
+        self.width = 7
+        self.height = 7
         self.actions = actions
         self.learning_rate = 0.01
         self.discount_factor = 0.9
-        self.epsilon = 0.1
+        self.epsilon = 0.2
         self.samples = []
         self.value_table = defaultdict(float)
 
@@ -20,6 +20,9 @@ class MCAgent:
     def save_sample(self, state, reward, done):
         self.samples.append([state, reward, done])
 
+    def render2(self):
+        time.sleep(0.1)
+        self.update()
     # for every episode, agent updates q function of visited states
     def update(self):
         G_t = 0
@@ -83,7 +86,6 @@ class MCAgent:
 
         return next_state
 
-
 # main loop
 if __name__ == "__main__":
     env = Env()
@@ -92,7 +94,7 @@ if __name__ == "__main__":
     for episode in range(1000):
         state = env.reset()
         action = agent.get_action(state)
-
+        print(agent.value_table)
         while True:
             env.render()
 
@@ -107,5 +109,6 @@ if __name__ == "__main__":
             if done:
                 print("episode : ", episode)
                 agent.update()
+                env.print_value_all(agent.value_table)
                 agent.samples.clear()
                 break
