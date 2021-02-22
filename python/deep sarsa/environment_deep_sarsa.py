@@ -4,7 +4,7 @@ import tkinter as tk
 from PIL import ImageTk, Image
 
 PhotoImage = ImageTk.PhotoImage
-UNIT = 50  # pixels
+UNIT = 100  # pixels
 HEIGHT = 5  # grid height
 WIDTH = 5  # grid width
 
@@ -42,8 +42,8 @@ class Env(tk.Tk):
             x0, y0, x1, y1 = 0, r, HEIGHT * UNIT, r
             canvas.create_line(x0, y0, x1, y1)
 
-        self.rewards = []
-        self.goal = []
+        # self.rewards = []
+        # self.goal = []
         # add image to canvas
         x, y = UNIT/2, UNIT/2
         self.rectangle = canvas.create_image(x, y, image=self.shapes[0])
@@ -55,11 +55,11 @@ class Env(tk.Tk):
 
     def load_images(self):
         rectangle = PhotoImage(
-            Image.open("../img/rectangle.png").resize((30, 30)))
+            Image.open("../img/rectangle.png").resize((50, 50)))
         triangle = PhotoImage(
-            Image.open("../img/triangle.png").resize((30, 30)))
+            Image.open("../img/triangle.png").resize((50, 50)))
         circle = PhotoImage(
-            Image.open("../img/circle.png").resize((30, 30)))
+            Image.open("../img/circle.png").resize((50, 50)))
 
         return rectangle, triangle, circle
 
@@ -68,8 +68,10 @@ class Env(tk.Tk):
         for reward in self.rewards:
             self.canvas.delete(reward['figure'])
 
-        self.rewards.clear()
-        self.goal.clear()
+        # self.rewards.clear()
+        self.rewards = []
+        # self.goal.clear()
+        self.goal = []
         self.set_reward([0, 1], -1)
         self.set_reward([1, 2], -1)
         self.set_reward([2, 3], -1)
@@ -78,9 +80,10 @@ class Env(tk.Tk):
         self.set_reward([4, 4], 1)
 
     def set_reward(self, state, reward):
-        state = [int(state[0]), int(state[1])]
-        x = int(state[0])
-        y = int(state[1])
+        # state = [int(state[0]), int(state[1])]
+        # x = int(state[0])
+        # y = int(state[1])
+        x, y = state
         temp = {}
         if reward > 0:
             temp['reward'] = reward
@@ -112,7 +115,7 @@ class Env(tk.Tk):
         for reward in self.rewards:
             if reward['state'] == state:
                 rewards += reward['reward']
-                if reward['reward'] == 1:
+                if reward['reward'] > 0:
                     check_list['if_goal'] = True
 
         check_list['rewards'] = rewards
@@ -177,7 +180,7 @@ class Env(tk.Tk):
     def move_rewards(self):
         new_rewards = []
         for temp in self.rewards:
-            if temp['reward'] == 1:
+            if temp['reward'] > 0:
                 new_rewards.append(temp)
                 continue
             temp['coords'] = self.move_const(temp)
@@ -201,9 +204,9 @@ class Env(tk.Tk):
         elif target['direction'] == 1:
             base_action[0] -= UNIT
 
-        if (target['figure'] is not self.rectangle
-           and s == [(WIDTH - 1) * UNIT, (HEIGHT - 1) * UNIT]):
-            base_action = np.array([0, 0])
+        # if (target['figure'] is not self.rectangle
+        #    and s == [(WIDTH - 1) * UNIT, (HEIGHT - 1) * UNIT]):
+        #     base_action = np.array([0, 0])
 
         self.canvas.move(target['figure'], base_action[0], base_action[1])
 
@@ -236,5 +239,5 @@ class Env(tk.Tk):
         return s_
 
     def render(self):
-        time.sleep(0.02)
+        time.sleep(0.005)
         self.update()

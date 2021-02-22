@@ -4,37 +4,38 @@ import tkinter as tk
 from PIL import ImageTk, Image
 
 PhotoImage = ImageTk.PhotoImage
-UNIT = 50  # pixels
-HEIGHT = 5  # grid height
-WIDTH = 5  # grid width
+UNIT = 100  # 픽셀 수
+HEIGHT = 5  # 그리드 세로
+WIDTH = 5  # 그리드 가로
 
 np.random.seed(1)
 
 
 class Env(tk.Tk):
-    def __init__(self):
+    def __init__(self, render_speed=1):
         super(Env, self).__init__()
+        self.render_speed=render_speed
         self.action_space = ['u', 'd', 'l', 'r']
         self.action_size = len(self.action_space)
-        self.title('Reinforce')
+        self.title('REINFORCE')
         self.geometry('{0}x{1}'.format(HEIGHT * UNIT, HEIGHT * UNIT))
         self.shapes = self.load_images()
         self.canvas = self._build_canvas()
         self.counter = 0
         self.rewards = []
         self.goal = []
-        # obstacle
+        # 장애물 설정
         self.set_reward([0, 1], -1)
         self.set_reward([1, 2], -1)
         self.set_reward([2, 3], -1)
-        # #goal
+        # 목표 지점 설정
         self.set_reward([4, 4], 1)
 
     def _build_canvas(self):
         canvas = tk.Canvas(self, bg='white',
                            height=HEIGHT * UNIT,
                            width=WIDTH * UNIT)
-        # create grids
+        # 그리드 생성
         for c in range(0, WIDTH * UNIT, UNIT):  # 0~400 by 80
             x0, y0, x1, y1 = c, 0, c, HEIGHT * UNIT
             canvas.create_line(x0, y0, x1, y1)
@@ -44,11 +45,10 @@ class Env(tk.Tk):
 
         self.rewards = []
         self.goal = []
-        # add image to canvas
+        # 캔버스에 이미지 추가
         x, y = UNIT/2, UNIT/2
         self.rectangle = canvas.create_image(x, y, image=self.shapes[0])
 
-        # pack all`
         canvas.pack()
 
         return canvas
@@ -78,7 +78,7 @@ class Env(tk.Tk):
         self.set_reward([4, 4], 1)
 
     def set_reward(self, state, reward):
-        state = [int(state[0]), int(state[1])]
+        # state = [int(state[0]), int(state[1])]
         x = int(state[0])
         y = int(state[1])
         temp = {}
@@ -103,7 +103,6 @@ class Env(tk.Tk):
         self.rewards.append(temp)
 
     # new methods
-
     def check_if_reward(self, state):
         check_list = dict()
         check_list['if_goal'] = False
@@ -112,7 +111,7 @@ class Env(tk.Tk):
         for reward in self.rewards:
             if reward['state'] == state:
                 rewards += reward['reward']
-                if reward['reward'] > 0:
+                if reward['reward'] == 1:
                     check_list['if_goal'] = True
 
         check_list['rewards'] = rewards
@@ -126,9 +125,9 @@ class Env(tk.Tk):
 
     def reset(self):
         self.update()
+        time.sleep(0.5)
         x, y = self.canvas.coords(self.rectangle)
         self.canvas.move(self.rectangle, UNIT / 2 - x, UNIT / 2 - y)
-        # return observation
         self.reset_reward()
         return self.get_state()
 
@@ -143,7 +142,7 @@ class Env(tk.Tk):
         check = self.check_if_reward(self.coords_to_state(next_coords))
         done = check['if_goal']
         reward = check['rewards']
-        reward -= 0.1
+
         self.canvas.tag_raise(self.rectangle)
 
         s_ = self.get_state()
@@ -157,9 +156,6 @@ class Env(tk.Tk):
         agent_y = location[1]
 
         states = list()
-
-        # locations.append(agent_x)
-        # locations.append(agent_y)
 
         for reward in self.rewards:
             reward_location = reward['state']
@@ -176,7 +172,7 @@ class Env(tk.Tk):
     def move_rewards(self):
         new_rewards = []
         for temp in self.rewards:
-            if temp['reward'] > 0:
+            if temp['reward'] == 1:
                 new_rewards.append(temp)
                 continue
             temp['coords'] = self.move_const(temp)
@@ -200,9 +196,9 @@ class Env(tk.Tk):
         elif target['direction'] == 1:
             base_action[0] -= UNIT
 
-        if (target['figure'] is not self.rectangle
-           and s == [(WIDTH - 1) * UNIT, (HEIGHT - 1) * UNIT]):
-            base_action = np.array([0, 0])
+        # if (target['figure'] is not self.rectangle
+        #    and s == [(WIDTH - 1) * UNIT, (HEIGHT - 1) * UNIT]):
+        #     base_action = np.array([0, 0])
 
         self.canvas.move(target['figure'], base_action[0], base_action[1])
 
@@ -215,16 +211,16 @@ class Env(tk.Tk):
 
         base_action = np.array([0, 0])
 
-        if action == 0:  # up
+        if action == 0:  # 상
             if s[1] > UNIT:
                 base_action[1] -= UNIT
-        elif action == 1:  # down
+        elif action == 1:  # 하
             if s[1] < (HEIGHT - 1) * UNIT:
                 base_action[1] += UNIT
-        elif action == 2:  # right
+        elif action == 2:  # 우
             if s[0] < (WIDTH - 1) * UNIT:
                 base_action[0] += UNIT
-        elif action == 3:  # left
+        elif action == 3:  # 좌
             if s[0] > UNIT:
                 base_action[0] -= UNIT
 
@@ -235,5 +231,6 @@ class Env(tk.Tk):
         return s_
 
     def render(self):
-        time.sleep(0.07)
+        # 게임 속도 조정
+        time.sleep(0.1)
         self.update()

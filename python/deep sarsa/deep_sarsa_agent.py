@@ -10,6 +10,10 @@ from tensorflow.keras.models import Sequential
 
 EPISODES = 1000
 
+# 1) 삼각형 만나면 재시작
+# 2) 삼각형 3개가 각각 속도가 다르면
+# 3) 동그라미도 움직이면 왓
+# 4) 모델 업그레이드
 
 # this is DeepSARSA Agent for the GridWorld
 # Utilize Neural Network as q function approximator
@@ -25,7 +29,7 @@ class DeepSARSAgent:
         self.learning_rate = 0.001
 
         self.epsilon = 1.  # exploration
-        self.epsilon_decay = .9999
+        self.epsilon_decay = .999
         self.epsilon_min = 0.01
         self.model = self.build_model()
 
@@ -61,16 +65,15 @@ class DeepSARSAgent:
 
         state = np.float32(state)
         next_state = np.float32(next_state)
-        target = self.model.predict(state)[0]
+        target = self.model.predict(state)#[0]
         # like Q Learning, get maximum Q value at s'
         # But from target model
         if done:
-            target[action] = reward
+            target[0][action] = reward
         else:
-            target[action] = (reward + self.discount_factor *
+            target[0][action] = (reward + self.discount_factor *
                               self.model.predict(next_state)[0][next_action])
-
-        target = np.reshape(target, [1, 5])
+        # target = np.reshape(target, [1, 5])
         # make minibatch which includes target q value and predicted q value
         # and do the model fit!
         self.model.fit(state, target, epochs=1, verbose=0)
@@ -100,7 +103,7 @@ if __name__ == "__main__":
             next_action = agent.get_action(next_state)
             agent.train_model(state, action, reward, next_state, next_action,
                               done)
-            state = next_state
+            # state = next_state
             # every time step we do training
             score += reward
 

@@ -20,24 +20,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f9bd5ff-ff6f-499b-94a1-5d30795b233e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/python/REINFORCE/REINFORCE_agent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/REINFORCE/reinforce_trained.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/REINFORCE/reinforce_trained.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/REINFORCE_book_ver/REINFORCE_agent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/REINFORCE_book_ver/environment_REINFORCE.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/deep sarsa/deep_sarsa_agent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/deep sarsa/deep_sarsa_trained.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/deep sarsa/deep_sarsa_trained.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/deep sarsa/environment_deep_sarsa.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/keras fashion mnist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/REINFORCE/test_REINFORCE.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa altered triangle death/.deep_sarsa.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa altered triangle death/.deep_sarsa_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa altered triangle death/deep_sarsa_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa altered triangle death/deep_sarsa_trained.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa altered triangle death/deep_sarsa_trained.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa altered triangle death/environment_deep_sarsa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa another speed/.deep_sarsa.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa another speed/.deep_sarsa_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa another speed/deep_sarsa_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa another speed/deep_sarsa_trained.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa another speed/deep_sarsa_trained.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa another speed/environment_deep_sarsa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa bigger map/.deep_sarsa.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa bigger map/.deep_sarsa_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa bigger map/deep_sarsa_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa bigger map/deep_sarsa_trained.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa bigger map/deep_sarsa_trained.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa bigger map/environment_deep_sarsa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa circle move/.deep_sarsa.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa circle move/.deep_sarsa_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa circle move/deep_sarsa_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa circle move/deep_sarsa_trained.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa circle move/deep_sarsa_trained.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa circle move/environment_deep_sarsa.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa model upgrade/.deep_sarsa.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa model upgrade/.deep_sarsa_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa model upgrade/deep_sarsa_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa model upgrade/deep_sarsa_trained.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa model upgrade/deep_sarsa_trained.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/deep sarsa model upgrade/environment_deep_sarsa.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled2-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled2-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Untitled2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Untitled2.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi-armed-bandit-exploration.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/multi-armed-bandit-exploration.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi-armed-bandit.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/multi-armed-bandit.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/montecarlo/environment_montecarlo.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/montecarlo/environment_montecarlo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/montecarlo/mc_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/montecarlo/mc_agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/qlearning/environment_qlearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/qlearning/environment_qlearning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/REINFORCE/REINFORCE_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/REINFORCE/REINFORCE_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/REINFORCE/environment_REINFORCE.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/REINFORCE/environment_REINFORCE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/REINFORCE/reinforce_trained.png" beforeDir="false" afterPath="$PROJECT_DIR$/python/REINFORCE/reinforce_trained.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/deep sarsa/.deep_sarsa.h5" beforeDir="false" afterPath="$PROJECT_DIR$/python/deep sarsa/.deep_sarsa.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/deep sarsa/.deep_sarsa_.png" beforeDir="false" afterPath="$PROJECT_DIR$/python/deep sarsa/.deep_sarsa_.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/deep sarsa/deep_sarsa_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/deep sarsa/deep_sarsa_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/deep sarsa/environment_deep_sarsa.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/deep sarsa/environment_deep_sarsa.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,18 +85,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/python/REINFORCE" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/python" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Documents\git\youngpark\python\REINFORCE" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\Documents\git\youngpark\python\REINFORCE" />
       <recent name="C:\Users\User\Documents\git\youngpark\python\deep sarsa" />
       <recent name="C:\Users\User\Documents\git\youngpark\python\policy_iteration" />
       <recent name="C:\Users\User\Documents\git\youngpark\python\qlearning" />
       <recent name="C:\Users\User\Documents\git\youngpark\python\sarsa" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\git\youngpark\python" />
+      <recent name="C:\Users\User\Documents\git\youngpark\python\REINFORCE" />
     </key>
   </component>
   <component name="RunManager" selected="Python.REINFORCE_agent">
@@ -99,7 +123,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="deep_sarsa_agent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="deep_sarsa_agent (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="youngpark" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -107,11 +131,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/deep sarsa" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/deep sarsa model upgrade" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/deep sarsa/deep_sarsa_agent.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/deep sarsa model upgrade/deep_sarsa_agent.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -120,7 +144,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="environment_deep_sarsa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="deep_sarsa_agent (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="youngpark" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -128,11 +152,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/deep sarsa" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/deep sarsa another speed" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/deep sarsa/environment_deep_sarsa.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/deep sarsa another speed/deep_sarsa_agent.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,7 +165,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="keras fashion mnist" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="deep_sarsa_agent (4)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="youngpark" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -149,11 +173,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/deep sarsa circle move" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/keras fashion mnist.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/deep sarsa circle move/deep_sarsa_agent.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,7 +186,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mc_agent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="deep_sarsa_agent (5)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="youngpark" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -170,11 +194,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/montecarlo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/deep sarsa bigger map" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/montecarlo/mc_agent.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/deep sarsa bigger map/deep_sarsa_agent.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -186,10 +210,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.REINFORCE_agent" />
-        <item itemvalue="Python.deep_sarsa_agent" />
-        <item itemvalue="Python.mc_agent" />
-        <item itemvalue="Python.environment_deep_sarsa" />
-        <item itemvalue="Python.keras fashion mnist" />
+        <item itemvalue="Python.deep_sarsa_agent (5)" />
+        <item itemvalue="Python.deep_sarsa_agent (3)" />
+        <item itemvalue="Python.deep_sarsa_agent (4)" />
+        <item itemvalue="Python.deep_sarsa_agent (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -219,30 +243,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="714" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612579622504">
+    <state x="714" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613569595377">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="714" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1612579622504" />
+    <state x="714" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1613569595377" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1612357937799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612357937799" />
-    <state width="936" height="279" key="GridCell.Tab.0.bottom" timestamp="1612581614112">
+    <state width="1899" height="279" key="GridCell.Tab.0.bottom" timestamp="1613822031686">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612581614112" />
-    <state width="936" height="279" key="GridCell.Tab.0.center" timestamp="1612581614112">
+    <state width="1899" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613822031686" />
+    <state width="1899" height="279" key="GridCell.Tab.0.center" timestamp="1613822031686">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612581614112" />
-    <state width="936" height="279" key="GridCell.Tab.0.left" timestamp="1612581614112">
+    <state width="1899" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613822031686" />
+    <state width="1899" height="279" key="GridCell.Tab.0.left" timestamp="1613822031686">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612581614112" />
-    <state width="936" height="279" key="GridCell.Tab.0.right" timestamp="1612581614112">
+    <state width="1899" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613822031686" />
+    <state width="1899" height="279" key="GridCell.Tab.0.right" timestamp="1613822031686">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612581614112" />
+    <state width="1899" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613822031686" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1610797463603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -259,13 +283,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610797463603" />
-    <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1612581614200">
+    <state x="461" y="165" key="SettingsEditor" timestamp="1612958935336">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1612581614200" />
-    <state x="92" y="92" width="1736" height="856" key="dock-window-2" timestamp="1612579545548">
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1612958935336" />
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613136552631">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1612579545548" />
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613136552631" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1613819363696">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1613819363696" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-2" timestamp="1613819363696">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="953" y="0" width="974" height="1047" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1613819363696" />
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1613817355773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1613817355773" />
   </component>
 </project>
