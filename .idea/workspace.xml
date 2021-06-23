@@ -20,23 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f9bd5ff-ff6f-499b-94a1-5d30795b233e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/python/atari_breakout-dqn/temp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/cartpole_DQN/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/cartpole_DQN/train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/cartpole_actor-critic/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/cartpole_actor-critic/train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/cartpole_contiuous-actor-critic/env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/cartpole_contiuous-actor-critic/train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/cartpole_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/cartpole_example2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/minigrid/manual control.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/minigrid/montecarlo_minigrid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/minigrid/obstacle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/minigrid/obstacle_DQN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/minigrid/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/deep sarsa/.deep_sarsa.h5" beforeDir="false" afterPath="$PROJECT_DIR$/python/deep sarsa/.deep_sarsa.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/deep sarsa/.deep_sarsa_.png" beforeDir="false" afterPath="$PROJECT_DIR$/python/deep sarsa/.deep_sarsa_.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
